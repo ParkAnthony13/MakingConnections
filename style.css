@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px dotted green; */
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+.navBar{
+    height: 5rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.mainContent {
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.boxTopBar {
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+.profileGeneral {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.boxTopBar {
+    color: white;
+    background-color: gray;
+    height: auto;
+    width: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+.col1 {
+    flex: 3;
+    padding: 2rem;
+}
+.profileCard {
+    height: auto;
+    width: auto;
+    outline:  2px solid black;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 34%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
+    padding: 2rem;
+}
+.profilePic {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin: 1.5rem;
+    border: 2px solid gray;
+}
+.name {
+    display:flex;
+}
+#changeName {
+    height: auto;
+    width: 7rem;
+    margin-left: 2rem;
+    outline: 2px solid red;
+    display: none;
+}
+.map {
+    display: flex;
+    align-items: center;
+}
+.mapMarker {
+    height: 2rem;
+    width: 1.2rem;
+    margin-right: 1rem;
+}
+.skills {
+    display: flex;
+    border-right: 1px solid black;
+}
+.edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.gear {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 1rem;
+}
+.education {
+    height: auto;
+    width: 100%;
+    outline:  2px solid black;
+}
+.col2 {
+    flex: 2;
+    padding: 2rem;
+}
+.friendRequest1 {
+    display: flex;
+}
+.friendRequest2 {
+    display: flex;
+    flex-direction: row;
+}
+.pending {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.requests { /*can't put two classes into one css */
+    outline: 2px solid black;
+}
+.connections { /*can't put two classes into one css */
+    outline: 2px solid black;
+}
+.requestLeft {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.requestRight {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+.acceptCircle {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.totalFriends {
+    display: flex;
+    height: 2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.friend {
+    display: flex;
+    align-items: center;
+}
+.friendList {
+    outline: 2px solid black;
+}

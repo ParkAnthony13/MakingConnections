@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navBar"></div>
+        <div class="mainContent">
+            <div class="col1">
+                <div class="profileCard">
+                    <img class="profilePic" src="user-circle.png" alt="User Circle">
+                    <div class="name">
+                        <p id="profileName">Jane Doe</p> <!--Gear pic and Edit Profile change Name differently-->
+                        <input id="changeName" type="text" name="name" oninput="setName(this)">
+                    </div>
+                    <div class="map">
+                        <img class="mapMarker" src="map-marker.png" alt="Map Marker">
+                        <p class="city">Seattle</p>
+                    </div>
+                    <div class="skills">
+                        <p class="skillItem">Developer</p>
+                        <p class="skillItem">Engineer</p>
+                        <p class="skillItem2">Problem Solver</p>
+                    </div>
+                    <p class="skillItem2">Master of shadows and the Internet!</p>
+                    <div class="edit">
+                        <img onclick="showPrompt()" src="gear.png" alt="Gear" class="gear">
+                        <a class="editProfile" onclick="showInput()" href="#" alt="Edit Profile">Edit Profile</a>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="boxTopBar">
+                        <p class="topBarName"><strong>Education</strong></p>
+                    </div>
+                    <p class="educationItem"><strong>Coding Dojo - Full Stack Bootcamp</strong></p>
+                    <p class="educationItem date">Dec 2019 - Mar 2020</p>
+                    <p class="educationItem">Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="requests">
+                    <div class="boxTopBar">  
+                        <p class="pending">2</p>
+                        <p class="topBarName"><strong>Connection Requests</strong></p>
+                    </div>
+                    <div class="friendRequest1">
+                        <div class="requestLeft">  
+                            <img class="profileGeneral" src="user-circle.png" alt="Todd E">
+                            <p>Todd E</p>
+                        </div>
+                        <div class="requestRight">
+                            <img class="acceptCircle" onclick="removeLine(1)" src="accept-circle.png" alt="accept">
+                            <img class="acceptCircle" onclick="removeLine(1)" src="close-circle.png" alt="reject">
+                        </div>
+                    </div>
+                    <div class="friendRequest2">
+                        <div class="requestLeft">  
+                            <img class="profileGeneral" src="user-circle.png" alt="Phil K">
+                            <p>Phil K</p>
+                        </div>
+                        <div class="requestRight">
+                            <img class="acceptCircle" onclick="removeLine(2)" src="accept-circle.png" alt="accept">
+                            <img class="acceptCircle" onclick="removeLine(2)" src="close-circle.png" alt="reject">
+                        </div>
+                    </div>
+                </div>
+                <div class="connections">
+                    <div class="boxTopBar">  
+                        <p class="totalFriends">418</p>
+                        <p class="topBarName"><strong>Your Connections</strong></p>
+                    </div>
+                    <div class="friend">  
+                        <img src="user-circle.png" alt="Person" class="profileGeneral">
+                        <p>Adrien D</p>
+                    </div>
+                    <div class="friend">
+                        <img src="user-circle.png" alt="Person" class="profileGeneral">
+                        <p>Anne J</p>
+                    </div>
+                    <div class="friend">
+                        <img src="user-circle.png" alt="Person" class="profileGeneral">
+                        <p>Alayne T</p>
+                    </div>
+                    <div class="friend">
+                        <img src="user-circle.png" alt="Person" class="profileGeneral">
+                        <p>Arry Y</p>
+                    </div>
+                    <a class="friendList" href="#" alt="Friends List">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
